@@ -2,7 +2,7 @@
 import { Router } from "@angular/router";
 
 import { AuthenticationService } from "./_services";
-import { User } from "./_models";
+import { User, Role } from "./_models";
 
 import "./_content/app.less";
 import { MatIconRegistry } from '@angular/material/icon';
@@ -28,6 +28,10 @@ export class AppComponent {
     iconRegistry.addSvgIcon(
       'logout',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/logout.svg'));
+  }
+
+  get isAdmin() {
+    return this.currentUser && this.currentUser.role === Role.Admin;
   }
 
   logout() {

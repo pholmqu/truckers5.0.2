@@ -2,6 +2,7 @@
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { first } from "rxjs/operators";
+import { Role } from "src/app/_models";
 
 import {
   AlertService,
@@ -36,8 +37,9 @@ export class RegisterComponent implements OnInit {
       firstName: ["", Validators.required],
       lastName: ["", Validators.required],
       username: ["", Validators.required],
-      password: ["", [Validators.required, Validators.minLength(6)]],
-      companyName: ["", Validators.required]
+      password: ["", [Validators.required, Validators.minLength(3)]],
+      companyName: ["", Validators.required],
+      role: [Role.User]
     });
   }
 

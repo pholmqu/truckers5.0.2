@@ -1,12 +1,17 @@
 ﻿<div class="jumbotron">
   <div class="container">
     <h1>Hi {{ currentUser.firstName }} from {{ currentUser.companyName }}!</h1>
+<<<<<<< HEAD
+=======
+    <p>You're logged in with Angular 8!!</p>
+>>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     <h3>All registered users:</h3>
     <ul>
       <li *ngFor="let user of users">
         {{ user.username }} ({{ user.firstName }} {{ user.lastName }}) -
         <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
       </li>
+<<<<<<< HEAD
 
       <mat-form-field>
         <mat-label>List length</mat-label>
@@ -35,6 +40,8 @@
         <div>Page size: {{pageEvent.pageSize}}</div>
         <div>Page index: {{pageEvent.pageIndex}}</div>
       </div>
+=======
+>>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     </ul>
   </div>
 </div>

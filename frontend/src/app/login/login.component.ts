@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     private authenticationService: AuthenticationService,
     private alertService: AlertService
   ) {
-    // redirect to home if already logged in
+    // redirect to dashboard if already logged in
     if (this.authenticationService.currentUserValue) {
       this.router.navigate(["/dashboard"]);
     }
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
       password: ["", Validators.required]
     });
 
-    // get return url from route parameters or default to '/'
+    // get return url from route parameters or default to dashboard
     this.returnUrl =
       this.route.snapshot.queryParams["returnUrl"] || "/dashboard";
   }
