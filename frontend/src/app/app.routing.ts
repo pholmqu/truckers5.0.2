@@ -1,13 +1,21 @@
 ﻿import { Routes, RouterModule } from "@angular/router";
 
 import { HomeComponent } from "./home";
+import { AdminComponent } from "./admin";
 import { DashboardComponent } from "./dashboard";
 import { LoginComponent } from "./login";
 import { RegisterComponent } from "./register";
 import { AuthGuard } from "./_helpers";
+import { Role } from "./_models";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, canActivate: [AuthGuard] },
+  {
+    path: "admin",
+    component: AdminComponent,
+    canActivate: [AuthGuard],
+    data: { roles: [Role.Admin] }
+  },
   {
     path: "dashboard",
     component: DashboardComponent,
