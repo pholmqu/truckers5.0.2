@@ -10,7 +10,7 @@ export interface Tile {
 @Component({
   selector: 'app-sponsor-dash',
   templateUrl: './sponsor-dash.component.html',
-  styleUrls: ['./sponsor-dash.component.less']
+  styleUrls: ['./sponsor-dash.component.css']
 })
 export class SponsorDashComponent implements OnInit {
 

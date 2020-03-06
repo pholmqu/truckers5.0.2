@@ -10,7 +10,7 @@ export interface Tile {
 @Component({
   selector: 'app-driver-dash',
   templateUrl: './driver-dash.component.html',
-  styleUrls: ['./driver-dash.component.less']
+  styleUrls: ['./driver-dash.component.css']
 })
 export class DriverDashComponent implements OnInit {
 

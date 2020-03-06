@@ -5,18 +5,29 @@ import { AuthenticationService } from "./_services";
 import { User } from "./_models";
 
 import "./_content/app.less";
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
-@Component({ selector: "app", templateUrl: "app.component.html" })
+@Component({ 
+  selector: "app", 
+  templateUrl: "app.component.html",
+  styleUrls: ['./app.component.css'] 
+})
 export class AppComponent {
   currentUser: User;
 
   constructor(
     private router: Router,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer
   ) {
     this.authenticationService.currentUser.subscribe(
-      x => (this.currentUser = x)
-    );
+      x => (this.currentUser = x));
+    
+    iconRegistry.addSvgIcon(
+      'logout',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/logout.svg'));
   }
 
   logout() {

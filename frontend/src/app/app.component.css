@@ -1,0 +1,9 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
