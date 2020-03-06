@@ -3,6 +3,7 @@ import { first } from "rxjs/operators";
 
 import { User } from "src/app/_models";
 import { UserService, AuthenticationService } from "src/app/_services";
+import { PageEvent } from '@angular/material/paginator'; 
 
 @Component({ templateUrl: "view-user.component.html" })
 export class ViewUserComponent implements OnInit {
@@ -16,6 +17,19 @@ export class ViewUserComponent implements OnInit {
     this.currentUser = this.authenticationService.currentUserValue;
   }
 
+  // MatPaginator Inputs
+  length = 100;
+  pageSize = 10;
+  pageSizeOptions: number[] = [5, 10, 25, 100];
+
+  // MatPaginator Output
+  pageEvent: PageEvent;
+
+  setPageSizeOptions(setPageSizeOptionsInput: string) {
+    if (setPageSizeOptionsInput) {
+      this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
+    }
+  }
   ngOnInit() {
     this.loadAllUsers();
   }
