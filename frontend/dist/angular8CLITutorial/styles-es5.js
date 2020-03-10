@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/Sandy/Desktop/Sandy/Clemson/CompSci/4910/Github/truckers5.0/truckers5.0.2/truckers5.0.2/frontend/src/styles.less */
+    /*! /Users/patrickholmquist/Documents/16 - Senior Year/Spring 2020/CPSC 4910/truckers5.0.2/frontend/src/styles.less */
     "./src/styles.less");
     /***/
   }

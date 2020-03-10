@@ -84,26 +84,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html":
-  /*!**********************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html ***!
-    \**********************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppAdminAdminComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<div class=\"card mt-4\">\n  <h4 class=\"card-header\">Admin</h4>\n  <div class=\"card-body\">\n    <p>This page can be accessed <u>only by administrators</u>.</p>\n    <p class=\"mb-1\">All users from secure (admin only) api end point:</p>\n    <div *ngIf=\"loading\" class=\"spinner-border spinner-border-sm\"></div>\n    <ul *ngIf=\"users\">\n      <li *ngFor=\"let user of users\">\n        {{ user.firstName }} {{ user.lastName }}\n      </li>\n    </ul>\n  </div>\n</div>\n";
-    /***/
-  },
-
-  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
   /*!**************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -119,11 +99,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-<<<<<<< HEAD
     __webpack_exports__["default"] = "<mat-toolbar color=\"primary\" *ngIf=\"currentUser\">\n  <mat-toolbar-row>\n    <h1 routerLink=\"\">Truckers</h1>\n    <span class=\"example-spacer\"></span>\n    <mat-icon svgIcon=\"logout\" aria-hidden=\"false\" (click)=\"logout()\"></mat-icon>\n  </mat-toolbar-row>\n</mat-toolbar>\n\n<!-- nav\n<nav class=\"navbar navbar-expand navbar-dark bg-dark\" *ngIf=\"currentUser\">\n  <div class=\"navbar-nav\">\n    <a class=\"nav-item nav-link\" routerLink=\"/home\">Home</a>\n    <a class=\"nav-item nav-link\" routerLink=\"/dashboard\">Dashboard</a>\n    <a class=\"nav-item nav-link\" (click)=\"logout()\">Logout</a>\n  </div>\n</nav> -->\n\n<!-- main app container -->\n<alert></alert>\n<router-outlet></router-outlet>\n";
-=======
-    __webpack_exports__["default"] = "<!-- nav -->\n<nav class=\"navbar navbar-expand navbar-dark bg-dark\" *ngIf=\"currentUser\">\n  <div class=\"navbar-nav\">\n    <a class=\"nav-item nav-link\" routerLink=\"/home\">Home</a>\n    <a class=\"nav-item nav-link\" routerLink=\"/dashboard\">Dashboard</a>\n    <a class=\"nav-item nav-link\" routerLink=\"/admin\" *ngIf=\"isAdmin\">Admin</a>\n    <a class=\"nav-item nav-link\" (click)=\"logout()\">Logout</a>\n  </div>\n</nav>\n\n<!-- main app container -->\n<div class=\"jumbotron\">\n  <div class=\"container\">\n    <alert></alert>\n    <router-outlet></router-outlet>\n  </div>\n</div>\n";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     /***/
   },
 
@@ -163,31 +139,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-<<<<<<< HEAD
     __webpack_exports__["default"] = "<mat-card>\n  <h2>Driver Features:</h2>\n  <mat-grid-list cols=\"4\" rowHeight=\"100px\">\n      <mat-grid-tile\n        *ngFor=\"let tile of tiles\"\n        [colspan]=\"tile.cols\"\n        [rowspan]=\"tile.rows\"\n        [style.background]=\"tile.color\"\n      >\n        {{ tile.text }}\n      </mat-grid-tile>\n    </mat-grid-list>\n</mat-card>";
-=======
-    __webpack_exports__["default"] = "<h2>Driver Features:</h2>\n<mat-grid-list cols=\"4\" rowHeight=\"100px\">\n    <mat-grid-tile\n      *ngFor=\"let tile of tiles\"\n      [colspan]=\"tile.cols\"\n      [rowspan]=\"tile.rows\"\n      [style.background]=\"tile.color\"\n    >\n      {{ tile.text }}\n    </mat-grid-tile>\n  </mat-grid-list>\n  <br />";
-    /***/
-  },
-
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html":
-  /*!********************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
-    \********************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppHomeHomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<h1>\n  Hi {{ currentUser.firstName }} from {{ currentUser.companyName }}! Your role\n  is {{ currentUser.role }}\n</h1>\n<p>You're logged in with Angular 8!!</p>\n<h3>All registered users:</h3>\n<ul>\n  <li *ngFor=\"let user of users\">\n    {{ user.username }} ({{ user.firstName }} {{ user.lastName }} - Role:\n    {{ user.role }}) -\n    <a (click)=\"deleteUser(user.id)\" class=\"text-danger\">Delete</a>\n  </li>\n</ul>\n";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     /***/
   },
 
@@ -227,11 +179,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-<<<<<<< HEAD
     __webpack_exports__["default"] = "<div class=\"main-div\">\n    <mat-card>\n        <h2>Register</h2>\n        <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n            <div>\n                <mat-form-field appearance=\"fill\">\n                    <mat-label for=\"firstName\">First Name</mat-label>\n                    <input matInput type=\"text\" formControlName=\"firstName\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.firstName.errors }\" />\n                    <div *ngIf=\"submitted && f.firstName.errors\" class=\"invalid-feedback\">\n                        <div *ngIf=\"f.firstName.errors.required\">First Name is required</div>\n                    </div>\n                </mat-form-field>\n            </div>\n            <div>\n                <mat-form-field appearance=\"fill\">\n                    <mat-label for=\"lastName\">Last Name</mat-label>\n                    <input matInput type=\"text\" formControlName=\"lastName\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.lastName.errors }\" />\n                    <div *ngIf=\"submitted && f.lastName.errors\" class=\"invalid-feedback\">\n                        <div *ngIf=\"f.lastName.errors.required\">Last Name is required</div>\n                    </div>\n                </mat-form-field>\n            </div>\n            <div>\n                <mat-form-field appearance=\"fill\">\n                    <mat-label for=\"username\">Username</mat-label>\n                    <input matInput type=\"text\" formControlName=\"username\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.username.errors }\" />\n                    <div *ngIf=\"submitted && f.username.errors\" class=\"invalid-feedback\">\n                        <div *ngIf=\"f.username.errors.required\">Username is required</div>\n                    </div>\n                </mat-form-field>\n            </div>\n            <div>\n                <mat-form-field appearance=\"fill\">\n                    <mat-label for=\"password\">Password</mat-label>\n                    <input matInput type=\"password\" formControlName=\"password\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.password.errors }\" />\n                    <div *ngIf=\"submitted && f.password.errors\" class=\"invalid-feedback\">\n                        <div *ngIf=\"f.password.errors.required\">Password is required</div>\n                        <div *ngIf=\"f.password.errors.minlength\">Password must be at least 6 characters</div>\n                    </div>\n                </mat-form-field>\n            </div>\n            <div>\n                <mat-form-field appearance=\"fill\">\n                    <mat-label for=\"companyName\">Company Name</mat-label>\n                    <input matInput type=\"text\" formControlName=\"companyName\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.companyName.errors }\" />\n                    <div *ngIf=\"submitted && f.companyName.errors\" class=\"invalid-feedback\">\n                        <div *ngIf=\"f.companyName.errors.required\">Company Name is required</div>\n                    </div>\n                </mat-form-field>\n            </div>\n            <button mat-raised-button [disabled]=\"loading\" class=\"btn btn-primary\">\n                <span *ngIf=\"loading\" class=\"spinner-border spinner-border-sm mr-1\"></span>\n                Register\n            </button>\n            <button mat-button routerLink=\"/login\" class=\"btn btn-link\">Cancel</button>\n        </form>\n    </mat-card>\n</div>";
-=======
-    __webpack_exports__["default"] = "<div class=\"row\">\n  <div class=\"col-sm-6 offset-sm-3\">\n    <h2>Register</h2>\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"form-group\">\n        <label for=\"firstName\">First Name</label>\n        <input\n          type=\"text\"\n          formControlName=\"firstName\"\n          class=\"form-control\"\n          [ngClass]=\"{ 'is-invalid': submitted && f.firstName.errors }\"\n        />\n        <div *ngIf=\"submitted && f.firstName.errors\" class=\"invalid-feedback\">\n          <div *ngIf=\"f.firstName.errors.required\">First Name is required</div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"lastName\">Last Name</label>\n        <input\n          type=\"text\"\n          formControlName=\"lastName\"\n          class=\"form-control\"\n          [ngClass]=\"{ 'is-invalid': submitted && f.lastName.errors }\"\n        />\n        <div *ngIf=\"submitted && f.lastName.errors\" class=\"invalid-feedback\">\n          <div *ngIf=\"f.lastName.errors.required\">Last Name is required</div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"username\">Username</label>\n        <input\n          type=\"text\"\n          formControlName=\"username\"\n          class=\"form-control\"\n          [ngClass]=\"{ 'is-invalid': submitted && f.username.errors }\"\n        />\n        <div *ngIf=\"submitted && f.username.errors\" class=\"invalid-feedback\">\n          <div *ngIf=\"f.username.errors.required\">Username is required</div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"password\">Password</label>\n        <input\n          type=\"password\"\n          formControlName=\"password\"\n          class=\"form-control\"\n          [ngClass]=\"{ 'is-invalid': submitted && f.password.errors }\"\n        />\n        <div *ngIf=\"submitted && f.password.errors\" class=\"invalid-feedback\">\n          <div *ngIf=\"f.password.errors.required\">Password is required</div>\n          <div *ngIf=\"f.password.errors.minlength\">\n            Password must be at least 3 characters\n          </div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"companyName\">Company Name</label>\n        <input\n          type=\"text\"\n          formControlName=\"companyName\"\n          class=\"form-control\"\n          [ngClass]=\"{ 'is-invalid': submitted && f.companyName.errors }\"\n        />\n        <div *ngIf=\"submitted && f.companyName.errors\" class=\"invalid-feedback\">\n          <div *ngIf=\"f.companyName.errors.required\">\n            Company Name is required\n          </div>\n        </div>\n      </div>\n      <!-- <div class=\"form-group\">\n        <label for=\"role\">Role </label>\n        <input\n          type=\"text\"\n          formControlName=\"role\"\n          class=\"form-control\"\n          value=\"Admin\"\n          readonly\n        />\n      </div> -->\n      <div class=\"form-group\">\n        <button [disabled]=\"loading\" class=\"btn btn-primary\">\n          <span\n            *ngIf=\"loading\"\n            class=\"spinner-border spinner-border-sm mr-1\"\n          ></span>\n          Register\n        </button>\n        <a routerLink=\"/login\" class=\"btn btn-link\">Cancel</a>\n      </div>\n    </form>\n  </div>\n</div>\n";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     /***/
   },
 
@@ -1008,11 +956,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-<<<<<<< HEAD
     __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL19jb250ZW50L2FwcC5sZXNzIn0= */";
-=======
-    __webpack_exports__["default"] = "a {\n  cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9TYW5keS9EZXNrdG9wL1NhbmR5L0NsZW1zb24vQ29tcFNjaS80OTEwL0dpdGh1Yi90cnVja2VyczUuMC90cnVja2VyczUuMC4yL3RydWNrZXJzNS4wLjIvZnJvbnRlbmQvc3JjL2FwcC9fY29udGVudC9hcHAubGVzcyIsInNyYy9hcHAvX2NvbnRlbnQvYXBwLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSxlQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9fY29udGVudC9hcHAubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGdsb2JhbCBhcHBsaWNhdGlvbiBzdHlsZXNcbmEge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn0iLCJhIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuIl19 */";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     /***/
   },
 
@@ -1074,14 +1018,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var currentUser = this.authenticationService.currentUserValue;
 
           if (currentUser) {
-            // check if route is restricted by role
-            if (route.data.roles && route.data.roles.indexOf(currentUser.role) === -1) {
-              // role not authorised so redirect to home page
-              this.router.navigate(["/dashboard"]);
-              return false;
-            } // authorised so return true
-
-
+            // authorised so return true
             return true;
           } // not logged in so redirect to login page with the return url
 
@@ -1175,8 +1112,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this2 = this;
 
           return next.handle(request).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(function (err) {
-            if ([401, 403].indexOf(err.status) !== -1) {
-              // auto logout if 401 Unauthorized or 403 Forbidden response returned from api
+            if (err.status === 401) {
+              // auto logout if 401 response returned from api
               _this2.authenticationService.logout();
 
               location.reload(true);
@@ -1504,13 +1441,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/environments/environment */
-    "./src/environments/environment.ts");
-    /* harmony import */
-
-
-    var src_app_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var src_app_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! src/app/_services */
     "./src/app/_services/index.ts");
 
@@ -1524,12 +1455,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(JwtInterceptor, [{
         key: "intercept",
         value: function intercept(request, next) {
-          // add auth header with jwt if user is logged in and request is to api url
+          // add authorization header with jwt token if available
           var currentUser = this.authenticationService.currentUserValue;
-          var isLoggedIn = currentUser && currentUser.token;
-          var isApiUrl = request.url.startsWith(src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl);
 
-          if (isLoggedIn && isApiUrl) {
+          if (currentUser && currentUser.token) {
             request = request.clone({
               setHeaders: {
                 Authorization: "Bearer ".concat(currentUser.token)
@@ -1546,128 +1475,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     JwtInterceptor.ctorParameters = function () {
       return [{
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]
+        type: src_app_services__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"]
       }];
     };
 
     JwtInterceptor = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()], JwtInterceptor);
     /***/
-  },
-
-  /***/
-  "./src/app/_models/index.ts":
-  /*!**********************************!*\
-    !*** ./src/app/_models/index.ts ***!
-    \**********************************/
-
-  /*! exports provided: User, Role */
-
-  /***/
-  function srcApp_modelsIndexTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _user__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./user */
-    "./src/app/_models/user.ts");
-    /* harmony reexport (safe) */
-
-
-    __webpack_require__.d(__webpack_exports__, "User", function () {
-      return _user__WEBPACK_IMPORTED_MODULE_1__["User"];
-    });
-    /* harmony import */
-
-
-    var _role__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./role */
-    "./src/app/_models/role.ts");
-    /* harmony reexport (safe) */
-
-
-    __webpack_require__.d(__webpack_exports__, "Role", function () {
-      return _role__WEBPACK_IMPORTED_MODULE_2__["Role"];
-    });
-    /***/
-
-  },
-
-  /***/
-  "./src/app/_models/role.ts":
-  /*!*********************************!*\
-    !*** ./src/app/_models/role.ts ***!
-    \*********************************/
-
-  /*! exports provided: Role */
-
-  /***/
-  function srcApp_modelsRoleTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "Role", function () {
-      return Role;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-
-    var Role;
-
-    (function (Role) {
-      Role["User"] = "User";
-      Role["Admin"] = "Admin";
-    })(Role || (Role = {}));
-    /***/
-
-  },
-
-  /***/
-  "./src/app/_models/user.ts":
-  /*!*********************************!*\
-    !*** ./src/app/_models/user.ts ***!
-    \*********************************/
-
-  /*! exports provided: User */
-
-  /***/
-  function srcApp_modelsUserTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "User", function () {
-      return User;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-
-    var User = function User() {
-      _classCallCheck(this, User);
-    };
-    /***/
-
   },
 
   /***/
@@ -1859,13 +1672,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             username: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (user) {
-            // login successful if there's a jwt token in the response
-            if (user && user.token) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem("currentUser", JSON.stringify(user));
+            // store user details and jwt token in local storage to keep user logged in between page refreshes
+            localStorage.setItem("currentUser", JSON.stringify(user));
 
-              _this4.currentUserSubject.next(user);
-            }
+            _this4.currentUserSubject.next(user);
 
             return user;
           }));
@@ -1873,7 +1683,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "logout",
         value: function logout() {
-          // remove user from local storage to log user out
+          // remove user from local storage and set current user to null
           localStorage.removeItem("currentUser");
           this.currentUserSubject.next(null);
         }
@@ -2015,11 +1825,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/users"));
         }
       }, {
-        key: "getById",
-        value: function getById(id) {
-          return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/users/").concat(id));
-        }
-      }, {
         key: "register",
         value: function register(user) {
           return this.http.post("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/users/register"), user);
@@ -2150,7 +1955,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-<<<<<<< HEAD
   "./src/app/app.component.css":
   /*!***********************************!*\
     !*** ./src/app/app.component.css ***!
@@ -2168,123 +1972,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     __webpack_exports__["default"] = ".example-spacer {\n    -webkit-box-flex: 1;\n            flex: 1 1 auto;\n}\n\nmat-icon {\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n            justify-content: center;\n    display: -webkit-box;\n    display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxtQkFBYztZQUFkLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSx5QkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLHdCQUF1QjtZQUF2Qix1QkFBdUI7SUFDdkIsb0JBQWE7SUFBYixhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1zcGFjZXIge1xuICAgIGZsZXg6IDEgMSBhdXRvO1xufVxuXG5tYXQtaWNvbiB7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xufSJdfQ== */";
     /***/
-=======
-  "./src/app/admin/admin.component.ts":
-  /*!******************************************!*\
-    !*** ./src/app/admin/admin.component.ts ***!
-    \******************************************/
-
-  /*! exports provided: AdminComponent */
-
-  /***/
-  function srcAppAdminAdminComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "AdminComponent", function () {
-      return AdminComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! rxjs/operators */
-    "./node_modules/rxjs/_esm2015/operators/index.js");
-    /* harmony import */
-
-
-    var src_app_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! src/app/_services */
-    "./src/app/_services/index.ts");
-
-    var AdminComponent = /*#__PURE__*/function () {
-      function AdminComponent(userService) {
-        _classCallCheck(this, AdminComponent);
-
-        this.userService = userService;
-        this.loading = false;
-        this.users = [];
-      }
-
-      _createClass(AdminComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this5 = this;
-
-          this.loading = true;
-          this.userService.getAll().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])()).subscribe(function (users) {
-            _this5.loading = false;
-            _this5.users = users;
-          });
-        }
-      }]);
-
-      return AdminComponent;
-    }();
-
-    AdminComponent.ctorParameters = function () {
-      return [{
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_3__["UserService"]
-      }];
-    };
-
-    AdminComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./admin.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html")).default
-    })], AdminComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/admin/index.ts":
-  /*!********************************!*\
-    !*** ./src/app/admin/index.ts ***!
-    \********************************/
-
-  /*! exports provided: AdminComponent */
-
-  /***/
-  function srcAppAdminIndexTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _admin_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./admin.component */
-    "./src/app/admin/admin.component.ts");
-    /* harmony reexport (safe) */
-
-
-    __webpack_require__.d(__webpack_exports__, "AdminComponent", function () {
-      return _admin_component__WEBPACK_IMPORTED_MODULE_1__["AdminComponent"];
-    });
-    /***/
-
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
   },
 
   /***/
@@ -2333,13 +2020,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./_models */
-    "./src/app/_models/index.ts");
-    /* harmony import */
-
-
-    var _content_app_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _content_app_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./_content/app.less */
     "./src/app/_content/app.less");
     /* harmony import */
@@ -2356,20 +2037,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 
     var AppComponent = /*#__PURE__*/function () {
-<<<<<<< HEAD
       function AppComponent(router, authenticationService, iconRegistry, sanitizer) {
         var _this5 = this;
-=======
-      function AppComponent(router, authenticationService) {
-        var _this6 = this;
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 
         _classCallCheck(this, AppComponent);
 
         this.router = router;
         this.authenticationService = authenticationService;
         this.authenticationService.currentUser.subscribe(function (x) {
-          return _this6.currentUser = x;
+          return _this5.currentUser = x;
         });
         iconRegistry.addSvgIcon('logout', sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/logout.svg'));
       }
@@ -2384,11 +2060,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "dashboard",
         value: function dashboard() {
           this.router.navigate(["/dashboard"]);
-        }
-      }, {
-        key: "isAdmin",
-        get: function get() {
-          return this.currentUser && this.currentUser.role === _models__WEBPACK_IMPORTED_MODULE_4__["Role"].Admin;
         }
       }]);
 
@@ -2501,15 +2172,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-<<<<<<< HEAD
-=======
-    var _admin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
-    /*! ./admin */
-    "./src/app/admin/index.ts");
-    /* harmony import */
-
-
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     var _dashboard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./dashboard */
     "./src/app/dashboard/index.ts");
@@ -2534,54 +2196,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-<<<<<<< HEAD
     var _driver_dash_driver_dash_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
-=======
-    var _angular_material___WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
-    /*! @angular/material/ */
-    "./node_modules/@angular/material/esm2015/material.js");
-    /* harmony import */
-
-
-    var _driver_dash_driver_dash_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     /*! ./driver-dash/driver-dash.component */
     "./src/app/driver-dash/driver-dash.component.ts");
     /* harmony import */
 
 
-    var _sponsor_dash_sponsor_dash_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _sponsor_dash_sponsor_dash_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./sponsor-dash/sponsor-dash.component */
     "./src/app/sponsor-dash/sponsor-dash.component.ts");
     /* harmony import */
 
 
-    var _admin_dash_admin_dash_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _admin_dash_admin_dash_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./admin-dash/admin-dash.component */
     "./src/app/admin-dash/admin-dash.component.ts");
     /* harmony import */
 
-<<<<<<< HEAD
 
     var _material_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./material.module */
     "./src/app/material.module.ts");
 
-=======
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-<<<<<<< HEAD
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _app_routing__WEBPACK_IMPORTED_MODULE_6__["appRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _material_module__WEBPACK_IMPORTED_MODULE_17__["MaterialModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"]],
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _view_user__WEBPACK_IMPORTED_MODULE_9__["ViewUserComponent"], _login__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"], _dashboard__WEBPACK_IMPORTED_MODULE_10__["DashboardComponent"], _register__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"], _components__WEBPACK_IMPORTED_MODULE_13__["AlertComponent"], _driver_dash_driver_dash_component__WEBPACK_IMPORTED_MODULE_14__["DriverDashComponent"], _sponsor_dash_sponsor_dash_component__WEBPACK_IMPORTED_MODULE_15__["SponsorDashComponent"], _admin_dash_admin_dash_component__WEBPACK_IMPORTED_MODULE_16__["AdminDashComponent"]],
-=======
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _app_routing__WEBPACK_IMPORTED_MODULE_5__["appRoutingModule"], //from angular materials
-      _angular_material___WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"]],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _home__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _admin__WEBPACK_IMPORTED_MODULE_9__["AdminComponent"], _login__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"], _dashboard__WEBPACK_IMPORTED_MODULE_10__["DashboardComponent"], _register__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"], _components__WEBPACK_IMPORTED_MODULE_13__["AlertComponent"], _driver_dash_driver_dash_component__WEBPACK_IMPORTED_MODULE_15__["DriverDashComponent"], _sponsor_dash_sponsor_dash_component__WEBPACK_IMPORTED_MODULE_16__["SponsorDashComponent"], _admin_dash_admin_dash_component__WEBPACK_IMPORTED_MODULE_17__["AdminDashComponent"]],
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
       providers: [{
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HTTP_INTERCEPTORS"],
         useClass: _helpers__WEBPACK_IMPORTED_MODULE_7__["JwtInterceptor"],
@@ -2636,67 +2279,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _admin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./admin */
-    "./src/app/admin/index.ts");
-    /* harmony import */
-
-
-    var _dashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./dashboard */
     "./src/app/dashboard/index.ts");
     /* harmony import */
 
 
-    var _login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./login */
     "./src/app/login/index.ts");
     /* harmony import */
 
 
-    var _register__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _register__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./register */
     "./src/app/register/index.ts");
     /* harmony import */
 
 
-    var _helpers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./_helpers */
     "./src/app/_helpers/index.ts");
-    /* harmony import */
-
-
-    var _models__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./_models */
-    "./src/app/_models/index.ts");
 
     var routes = [{
-<<<<<<< HEAD
       path: "view-user",
       component: _view_user__WEBPACK_IMPORTED_MODULE_2__["ViewUserComponent"],
       canActivate: [_helpers__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]]
-=======
-      path: "home",
-      component: _home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"],
-      canActivate: [_helpers__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
-    }, {
-      path: "admin",
-      component: _admin__WEBPACK_IMPORTED_MODULE_3__["AdminComponent"],
-      canActivate: [_helpers__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]],
-      data: {
-        roles: [_models__WEBPACK_IMPORTED_MODULE_8__["Role"].Admin]
-      }
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     }, {
       path: "dashboard",
-      component: _dashboard__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"],
-      canActivate: [_helpers__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+      component: _dashboard__WEBPACK_IMPORTED_MODULE_3__["DashboardComponent"],
+      canActivate: [_helpers__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]]
     }, {
       path: "login",
-      component: _login__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]
+      component: _login__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"]
     }, {
       path: "register",
-      component: _register__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"]
+      component: _register__WEBPACK_IMPORTED_MODULE_5__["RegisterComponent"]
     }, // otherwise redirect to home
     {
       path: "**",
@@ -2776,10 +2394,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "loadAllUsers",
         value: function loadAllUsers() {
-          var _this7 = this;
+          var _this6 = this;
 
           this.userService.getAll().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])()).subscribe(function (users) {
-            return _this7.users = users;
+            return _this6.users = users;
           });
         }
       }]);
@@ -2938,115 +2556,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-<<<<<<< HEAD
   "./src/app/login/index.ts":
   /*!********************************!*\
     !*** ./src/app/login/index.ts ***!
     \********************************/
-=======
-  "./src/app/home/home.component.ts":
-  /*!****************************************!*\
-    !*** ./src/app/home/home.component.ts ***!
-    \****************************************/
-
-  /*! exports provided: HomeComponent */
-
-  /***/
-  function srcAppHomeHomeComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "HomeComponent", function () {
-      return HomeComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! rxjs/operators */
-    "./node_modules/rxjs/_esm2015/operators/index.js");
-    /* harmony import */
-
-
-    var src_app_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! src/app/_services */
-    "./src/app/_services/index.ts");
-
-    var HomeComponent = /*#__PURE__*/function () {
-      function HomeComponent(authenticationService, userService) {
-        _classCallCheck(this, HomeComponent);
-
-        this.authenticationService = authenticationService;
-        this.userService = userService;
-        this.users = [];
-        this.currentUser = this.authenticationService.currentUserValue;
-      }
-
-      _createClass(HomeComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          this.loadAllUsers();
-        }
-      }, {
-        key: "deleteUser",
-        value: function deleteUser(id) {
-          var _this8 = this;
-
-          this.userService.delete(id).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])()).subscribe(function () {
-            return _this8.loadAllUsers();
-          });
-        }
-      }, {
-        key: "loadAllUsers",
-        value: function loadAllUsers() {
-          var _this9 = this;
-
-          this.userService.getAll().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])()).subscribe(function (users) {
-            return _this9.users = users;
-          });
-        }
-      }]);
-
-      return HomeComponent;
-    }();
-
-    HomeComponent.ctorParameters = function () {
-      return [{
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]
-      }, {
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_3__["UserService"]
-      }];
-    };
-
-    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./home.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html")).default
-    })], HomeComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/home/index.ts":
-  /*!*******************************!*\
-    !*** ./src/app/home/index.ts ***!
-    \*******************************/
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 
   /*! exports provided: LoginComponent */
 
@@ -3163,7 +2676,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.authenticationService = authenticationService;
         this.alertService = alertService;
         this.loading = false;
-        this.submitted = false; // redirect to dashboard if already logged in
+        this.submitted = false; // redirect to home if already logged in
 
         if (this.authenticationService.currentUserValue) {
           this.router.navigate(["/dashboard"]);
@@ -3176,7 +2689,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.loginForm = this.formBuilder.group({
             username: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
             password: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]
-          }); // get return url from route parameters or default to dashboard
+          }); // get return url from route parameters or default to '/'
 
           this.returnUrl = this.route.snapshot.queryParams["returnUrl"] || "/dashboard";
         } // convenience getter for easy access to form fields
@@ -3184,11 +2697,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-<<<<<<< HEAD
           var _this7 = this;
-=======
-          var _this10 = this;
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 
           this.submitted = true; // reset alerts on submit
 
@@ -3200,19 +2709,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.loading = true;
           this.authenticationService.login(this.f.username.value, this.f.password.value).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])()).subscribe(function (data) {
-<<<<<<< HEAD
             _this7.router.navigate([_this7.returnUrl]);
           }, function (error) {
             _this7.alertService.error(error);
 
             _this7.loading = false;
-=======
-            _this10.router.navigate([_this10.returnUrl]);
-          }, function (error) {
-            _this10.alertService.error(error);
-
-            _this10.loading = false;
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
           });
         }
       }, {
@@ -3649,13 +3150,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var src_app_models__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! src/app/_models */
-    "./src/app/_models/index.ts");
-    /* harmony import */
-
-
-    var src_app_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var src_app_services__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! src/app/_services */
     "./src/app/_services/index.ts");
 
@@ -3683,20 +3178,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             firstName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
             lastName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
             username: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
-            password: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].minLength(3)]],
-            companyName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
-            role: [src_app_models__WEBPACK_IMPORTED_MODULE_5__["Role"].Admin]
+            password: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].minLength(6)]],
+            companyName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]
           });
         } // convenience getter for easy access to form fields
 
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-<<<<<<< HEAD
           var _this8 = this;
-=======
-          var _this11 = this;
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 
           this.submitted = true; // reset alerts on submit
 
@@ -3708,7 +3198,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.loading = true;
           this.userService.register(this.registerForm.value).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])()).subscribe(function (data) {
-<<<<<<< HEAD
             _this8.alertService.success("Registration successful", true);
 
             _this8.router.navigate(["/login"]);
@@ -3716,15 +3205,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this8.alertService.error(error);
 
             _this8.loading = false;
-=======
-            _this11.alertService.success("Registration successful", true);
-
-            _this11.router.navigate(["/login"]);
-          }, function (error) {
-            _this11.alertService.error(error);
-
-            _this11.loading = false;
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
           });
         }
       }, {
@@ -3743,11 +3223,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
       }, {
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_6__["AuthenticationService"]
+        type: src_app_services__WEBPACK_IMPORTED_MODULE_5__["AuthenticationService"]
       }, {
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_6__["UserService"]
+        type: src_app_services__WEBPACK_IMPORTED_MODULE_5__["UserService"]
       }, {
-        type: src_app_services__WEBPACK_IMPORTED_MODULE_6__["AlertService"]
+        type: src_app_services__WEBPACK_IMPORTED_MODULE_5__["AlertService"]
       }];
     };
 
@@ -4117,7 +3597,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/Sandy/Desktop/Sandy/Clemson/CompSci/4910/Github/truckers5.0/truckers5.0.2/truckers5.0.2/frontend/src/main.ts */
+    /*! /Users/patrickholmquist/Documents/16 - Senior Year/Spring 2020/CPSC 4910/truckers5.0.2/frontend/src/main.ts */
     "./src/main.ts");
     /***/
   }

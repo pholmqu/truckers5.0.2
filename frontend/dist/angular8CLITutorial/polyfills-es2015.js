@@ -6485,8 +6485,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/Sandy/Desktop/Sandy/Clemson/CompSci/4910/Github/truckers5.0/truckers5.0.2/truckers5.0.2/frontend/src/polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! /Users/Sandy/Desktop/Sandy/Clemson/CompSci/4910/Github/truckers5.0/truckers5.0.2/truckers5.0.2/frontend/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
+__webpack_require__(/*! /Users/patrickholmquist/Documents/16 - Senior Year/Spring 2020/CPSC 4910/truckers5.0.2/frontend/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /Users/patrickholmquist/Documents/16 - Senior Year/Spring 2020/CPSC 4910/truckers5.0.2/frontend/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
 /***/ })

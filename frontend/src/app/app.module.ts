@@ -8,27 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { appRoutingModule } from "./app.routing";
 import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 import { AppComponent } from "./app.component";
-<<<<<<< HEAD
 import { ViewUserComponent } from "./view-user";
-=======
-import { HomeComponent } from "./home";
-import { AdminComponent } from "./admin";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 import { DashboardComponent } from "./dashboard";
 import { LoginComponent } from "./login";
 import { RegisterComponent } from "./register";
 import { AlertComponent } from "./_components";
-<<<<<<< HEAD
 import { DriverDashComponent } from './driver-dash/driver-dash.component';
 import { SponsorDashComponent } from './sponsor-dash/sponsor-dash.component';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { MaterialModule } from './material.module';
-=======
-import { MatGridListModule } from "@angular/material/";
-import { DriverDashComponent } from "./driver-dash/driver-dash.component";
-import { SponsorDashComponent } from "./sponsor-dash/sponsor-dash.component";
-import { AdminDashComponent } from "./admin-dash/admin-dash.component";
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
 
 @NgModule({
   imports: [
@@ -42,23 +30,13 @@ import { AdminDashComponent } from "./admin-dash/admin-dash.component";
   ],
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     ViewUserComponent,
-=======
-    HomeComponent,
-    AdminComponent,
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     LoginComponent,
     DashboardComponent,
     RegisterComponent,
     AlertComponent,
-<<<<<<< HEAD
     DriverDashComponent ,
     SponsorDashComponent ,
-=======
-    DriverDashComponent,
-    SponsorDashComponent,
->>>>>>> 43fef5fe5238ba00866d638828b61703ca92d2a1
     AdminDashComponent
   ],
   providers: [
