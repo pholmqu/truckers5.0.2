@@ -1,8 +1,8 @@
 ﻿import { Component } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 
 import { AuthenticationService } from "./_services";
-import { User } from "./_models";
+import { User, Role } from "./_models";
 
 import "./_content/app.less";
 import { MatIconRegistry } from '@angular/material/icon';
@@ -36,5 +36,10 @@ export class AppComponent {
   }
   dashboard() {
     this.router.navigate(["/dashboard"]);
+  }
+
+  get isAdmin()
+  {
+    return this.currentUser && this.currentUser.role === Role.Admin;
   }
 }
