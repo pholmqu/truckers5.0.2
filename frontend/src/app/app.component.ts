@@ -38,8 +38,7 @@ export class AppComponent {
     this.router.navigate(["/dashboard"]);
   }
 
-  get isAdmin()
-  {
+  get isAdmin() {
     return this.currentUser && this.currentUser.role === Role.Admin;
   }
 }

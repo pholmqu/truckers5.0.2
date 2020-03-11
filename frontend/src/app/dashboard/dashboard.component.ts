@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { first } from "rxjs/operators";
 
-import { User } from "src/app/_models";
+import { User, Role } from "src/app/_models";
 import { UserService, AuthenticationService } from "src/app/_services";
 
 @Component({ templateUrl: "dashboard.component.html" })
@@ -32,5 +32,9 @@ export class DashboardComponent implements OnInit {
       .getAll()
       .pipe(first())
       .subscribe(users => (this.users = users));
+  }
+
+  get isAdmin() {
+    return this.currentUser && this.currentUser.role === Role.Admin;
   }
 }
