@@ -1,9 +1,9 @@
 ﻿import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
 
 import { appRoutingModule } from "./app.routing";
 import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
@@ -12,11 +12,13 @@ import { ViewUserComponent } from "./view-user";
 import { DashboardComponent } from "./dashboard";
 import { LoginComponent } from "./login";
 import { RegisterComponent } from "./register";
+import { RegisterAdminComponent } from "./register-admin";
+import { RegisterSponsorComponent } from "./register-sponsor";
 import { AlertComponent } from "./_components";
-import { DriverDashComponent } from './driver-dash/driver-dash.component';
-import { SponsorDashComponent } from './sponsor-dash/sponsor-dash.component';
-import { AdminDashComponent } from './admin-dash/admin-dash.component';
-import { MaterialModule } from './material.module';
+import { DriverDashComponent } from "./driver-dash/driver-dash.component";
+import { SponsorDashComponent } from "./sponsor-dash/sponsor-dash.component";
+import { AdminDashComponent } from "./admin-dash/admin-dash.component";
+import { MaterialModule } from "./material.module";
 
 @NgModule({
   imports: [
@@ -26,7 +28,7 @@ import { MaterialModule } from './material.module';
     appRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -34,9 +36,11 @@ import { MaterialModule } from './material.module';
     LoginComponent,
     DashboardComponent,
     RegisterComponent,
+    RegisterAdminComponent,
+    RegisterSponsorComponent,
     AlertComponent,
-    DriverDashComponent ,
-    SponsorDashComponent ,
+    DriverDashComponent,
+    SponsorDashComponent,
     AdminDashComponent
   ],
   providers: [

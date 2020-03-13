@@ -37,4 +37,10 @@ export class DashboardComponent implements OnInit {
   get isAdmin() {
     return this.currentUser && this.currentUser.role === Role.Admin;
   }
+  get isDriver() {
+    return this.currentUser && this.currentUser.role === Role.User;
+  }
+  get isSponsor() {
+    return this.currentUser && this.currentUser.role === Role.Sponsor;
+  }
 }
